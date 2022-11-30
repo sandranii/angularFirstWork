@@ -1,0 +1,8 @@
+<!-- <p>board-component works!</p> -->
+<div>
+  <!-- {{index}} -->
+  <!-- <button type="button" (click)="addClick(i)">add 我是{{index}}</button> -->
+  <button type="button" (click)="eventClick($event)">
+    子層 ID {{index}} ，點擊次數{{count}}</button>
+  <button type="button" (click)="removeItem(i)">子層 ID {{index}}要remove</button>
+</div>
