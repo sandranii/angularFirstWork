@@ -20,12 +20,12 @@ export class AppComponent {
     this.list.push(this.num);
     console.log('this.list',this.list);
   }
-  log(event: any): void{
-    console.log('father event點擊次數', event);
-    this.eventCount=event;
+  log($event: any): void{
+    console.log('father event點擊次數', $event);
+    this.eventCount=$event;
   }
-  logIndex(event: any): void{
-    console.log('father2 event 點擊項目', event);
-    this.eventIndex =event;
+  logIndex($event: any): void{
+    console.log('father2 event 點擊項目', $event);
+    this.eventIndex =$event;
   }
 }

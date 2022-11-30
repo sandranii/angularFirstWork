@@ -27,15 +27,16 @@ export class BoardComponentComponent implements OnInit {
     i=this.index;
     console.log(i);
   }
-  eventClick(event: any){
+  eventClick($event: any){
     this.count ++;
     console.log('this.count', this.count);
-    console.log('event', event);
-    console.log('event.target', event.target);
+    // console.log('event', event);
+    console.log('$event', $event);
+    console.log('$event.target', $event.target);
     // this.aaa = this.count;
     this.indexChange.emit(this.count);
-    this.idx = this.index;
+    // this.idx = this.index;
     this.idxChange.emit(this.index);
-    console.log('this.idx', this.idx);
+    // console.log('this.idx', this.idx);
   }
 }
